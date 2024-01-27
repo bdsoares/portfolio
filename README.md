@@ -1,27 +1,68 @@
-# Portfolio
+# Meu Portfólio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.1.
+Este o projeto do portfólio pessoal desenvolvido usando Angular. Ele apresenta uma página única (Single Page Application - SPA) que inclui seções para uma introdução pessoal, uma lista de projetos, uma timeline de experiências e formação, e um rodapé com informações de contato.
 
-## Development server
+## Funcionalidades
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Tela de apresentação com foto e nome.
+- Seção "Sobre Mim" com uma breve descrição.
+- Lista de projetos destacados.
+- Timeline de experiências profissionais e formação acadêmica.
+- Rodapé com informações de contato e links para redes sociais.
 
-## Code scaffolding
+## Tecnologias Utilizadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Angular
+- TypeScript
+- HTML5
+- CSS3
 
-## Build
+## Requisitos
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Node.js (v20.11 ou superior recomendado)
+- npm (v10.2.4 ou superior)
+- Angular CLI (v17.1.1)
 
-## Running unit tests
+## Como Instalar
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Para instalar o projeto, siga estas etapas:
 
-## Running end-to-end tests
+1. Clone o repositório para sua máquina local:
+```
+git clone https://github.com/bdsoares/portfolio.git
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2. Navegue até a pasta do projeto:
+```
+cd portfolio
+```
 
-## Further help
+3. Instale as dependências do projeto:
+```
+npm install
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Como Executar
+
+Para rodar o projeto localmente, execute o seguinte comando dentro da pasta do projeto:
+```
+ng serve
+```
+
+Após iniciar o servidor, abra o navegador e acesse `http://localhost:4200` para visualizar o portfólio.
+
+## Estrutura do Projeto
+
+O projeto é estruturado em componentes Angular, cada um representando uma seção específica do portfólio:
+
+- `src/app/header`: Tela de apresentação.
+- `src/app/about-me`: Seção "Sobre Mim".
+- `src/app/projects`: Lista de projetos.
+- `src/app/timeline`: Timeline de experiências e formação.
+- `src/app/footer`: Rodapé com informações de contato.
+
+## Contato
+
+Bruno Daniel Soares dos Santos - bdsoares@protonmail.com
+
+Projeto Link: https://brunodaniel.com
