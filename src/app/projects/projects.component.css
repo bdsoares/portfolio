@@ -1,0 +1,33 @@
+.projects-container {
+    margin: 40px;
+    padding: 20px;
+}
+
+.project {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project h3 {
+    margin-top: 15px;
+}
+
+.project p {
+    color: #555;
+}
+
+.project a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}

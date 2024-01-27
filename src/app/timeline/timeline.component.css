@@ -1,0 +1,27 @@
+.timeline-container {
+    margin: 40px;
+    padding: 20px;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 30px;
+    border-left: 2px solid #007bff;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+}
+
+.timeline-date {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+}
+
+.timeline-content p {
+    margin: 0;
+}
