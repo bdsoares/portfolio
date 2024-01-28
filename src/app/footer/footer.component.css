@@ -2,20 +2,16 @@
     text-align: center;
     padding: 20px;
     background-color: #f8f9fa;
-    /* Cor de fundo do rodapé */
     border-top: 1px solid #e7e7e7;
-    /* Linha no topo do rodapé */
 }
 
 .footer-container p {
     margin: 0;
     color: #333;
-    /* Cor do texto */
 }
 
 .footer-container a {
     color: #007bff;
-    /* Cor dos links */
     text-decoration: none;
 }
 

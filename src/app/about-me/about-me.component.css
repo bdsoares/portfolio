@@ -1,22 +1,19 @@
 .about-me-container {
-    margin: 40px;
     padding: 20px;
     background-color: #ffffff;
-    /* Cor de fundo */
-    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Sombra leve para destaque */
+}
+
+.about {
+    margin: 40px;
 }
 
 .about-me-container h2 {
     text-align: center;
     color: #333333;
-    /* Cor do texto do título */
 }
 
 .about-me-container p {
     color: #555555;
-    /* Cor do texto */
     line-height: 1.6;
-    /* Espaçamento de linha */
 }

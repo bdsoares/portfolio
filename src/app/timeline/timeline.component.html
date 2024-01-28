@@ -1,11 +1,13 @@
 <div class="timeline-container">
     <h2>Minha Timeline</h2>
-    <div class="timeline">
-        <div class="timeline-item" *ngFor="let item of timelineItems">
-            <div class="timeline-date">{{ item.date }}</div>
-            <div class="timeline-content">
-                <h3>{{ item.title }}</h3>
-                <p>{{ item.description }}</p>
+    <div class="timeline-area">
+        <div class="timeline">
+            <div class="timeline-item" *ngFor="let item of timelineItems">
+                <div class="timeline-date">{{ item.date }}</div>
+                <div class="timeline-content">
+                    <h3>{{ item.title }}</h3>
+                    <p>{{ item.description }}</p>
+                </div>
             </div>
         </div>
     </div>

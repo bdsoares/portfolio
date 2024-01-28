@@ -1,6 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
 html,
 body {
     max-width: 100%;
     overflow-x: hidden;
+}
+
+body,
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    /* para um peso de fonte mais bold (negrito) */
 }

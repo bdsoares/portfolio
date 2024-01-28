@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-timeline',
   templateUrl: './timeline.component.html',
   styleUrl: './timeline.component.css'
 })
-export class TimelineComponent implements OnInit {
+export class TimelineComponent {
+
   timelineItems = [
     {
       date: '2023',
@@ -19,8 +20,7 @@ export class TimelineComponent implements OnInit {
     }
   ];
 
-  constructor() { }
+  particlesUrl: any;
 
-  ngOnInit(): void {
-  }
+  constructor() { }
 }

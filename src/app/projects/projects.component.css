@@ -1,5 +1,15 @@
-.projects-container {
-    margin: 40px;
+.projects-container h2 {
+    text-align: center;
+    color: white;
+    margin: 50px;
+}
+
+.projects-area {
+    background-color: white;
+}
+
+.projects {
+    margin-left: 40px;
     padding: 20px;
 }
 

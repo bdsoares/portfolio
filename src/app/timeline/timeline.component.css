@@ -1,5 +1,16 @@
-.timeline-container {
-    margin: 40px;
+.timeline-container h2 {
+    text-align: center;
+    color: white;
+    margin: 50px;
+    /* Cor do texto do título */
+}
+
+.timeline-area {
+    background-color: white;
+}
+
+.timeline {
+    margin-top: 40px;
     padding: 20px;
 }
 
