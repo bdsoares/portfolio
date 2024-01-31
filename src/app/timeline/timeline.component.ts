@@ -1,26 +1,30 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { TimelineService } from '../services/timeline.service';
+
+
+interface EventItem {
+  title?: string;
+  description?: string;
+  startDate?: string;
+  endDate?: string;
+  icon?: string;
+  color?: string;
+}
 
 @Component({
   selector: 'app-timeline',
   templateUrl: './timeline.component.html',
-  styleUrl: './timeline.component.css'
+  styleUrl: './timeline.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class TimelineComponent {
+export class TimelineComponent implements OnInit {
+  events: EventItem[] = [];
 
-  timelineItems = [
-    {
-      date: '2023',
-      title: 'Engenheiro de Software na Empresa X',
-      description: 'Descrição do trabalho realizado na Empresa X.'
-    },
-    {
-      date: '2022',
-      title: 'Mestrado em Ciência da Computação',
-      description: 'Descrição do mestrado e principais aprendizados.'
-    }
-  ];
+  constructor(private timelineService: TimelineService) { }
 
-  particlesUrl: any;
-
-  constructor() { }
+  ngOnInit(): void {
+    this.timelineService.getTimeline().subscribe(data => {
+      this.events = [...data];
+    });
+  }
 }

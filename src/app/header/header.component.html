@@ -1,5 +1,5 @@
 <div id="header-particles" *ngIf="isBrowser">
-    <ngx-particles [id]="headerParticlesId" [options]="particlesUrl" [particlesInit]="particlesInit.bind(this)">
+    <ngx-particles [id]="headerParticlesId" [options]="particlesData" [particlesInit]="particlesInit.bind(this)">
     </ngx-particles>
 </div>
 
@@ -8,15 +8,11 @@
 
     <h1>Bruno Daniel Soares dos Santos</h1>
     <p class="description">Estudante & Desenvolvedor</p>
-    <div class="social-links">
-        <a href="https://github.com/bdsoares" target="_blank">
-            <i class="fab fa-github"></i>
-        </a>
-        <a href="https://linkedin.com/in/bdsoares" target="_blank">
-            <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="mailto:bdsoares@protonmail.com">
-            <i class="far fa-envelope"></i>
-        </a>
+    <div *ngIf="contactData?.length > 0" class="social-links">
+        <ng-container *ngFor="let contact of contactData">
+            <a href="{{ contact.data }}" [attr.target]="contact.new_tab ? '_blank' : null">
+                <i class="{{ contact.icon }}"></i>
+            </a>
+        </ng-container>
     </div>
 </div>

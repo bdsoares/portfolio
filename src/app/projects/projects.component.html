@@ -1,12 +1,19 @@
 <div class="projects-container">
     <h2>Meus Projetos</h2>
     <div class="projects-area">
-        <div class="projects">
-            <div class="project" *ngFor="let project of projects">
-                <img [src]="project.imageUrl" alt="{{ project.title }}">
-                <h3>{{ project.title }}</h3>
-                <p>{{ project.description }}</p>
-                <a href="{{ project.link }}" target="_blank">Saiba mais</a>
+        <div class="project-cards">
+            <div *ngFor="let project of projects" class="card">
+                <div class="card-header" [ngStyle]="{'background-color': project.color}">
+                    <img src="{{ project.icon }}" alt="{{ project.nome }}" class="card-icon">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">{{ project.nome }}</h3>
+                    <p class="card-text">{{ project.descricao }}</p>
+                    <a href="{{ project.link }}" class="card-button">SAIBA MAIS</a>
+                </div>
+            </div>
+            <div *ngIf="projects?.length === 0" class="p-col-12 no-projects-message">
+                <p>Nenhum projeto encontrado. Projetos serão adicionados em breve!</p>
             </div>
         </div>
     </div>

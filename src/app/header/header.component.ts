@@ -1,6 +1,8 @@
 import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-import { HttpClient } from '@angular/common/http';
+
+import { ContactService } from '../services/contact.service';
+import { ParticlesService } from '../services/particles.service';
 
 @Component({
   selector: 'app-header',
@@ -9,29 +11,25 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HeaderComponent implements OnInit {
   headerParticlesId = 'header-particles';
-  
-  particlesUrl: any;
+
+  particlesData: any;
+  contactData: any;
 
   isBrowser = false;
 
-  constructor(private http: HttpClient, @Inject(PLATFORM_ID) private platformId: object) { }
+  constructor(private contactService: ContactService, private particleService: ParticlesService, @Inject(PLATFORM_ID) private platformId: object) { }
 
   ngOnInit(): void {
     this.isBrowser = isPlatformBrowser(this.platformId);
     if (this.isBrowser) {
-      this.loadJsonFile();
-    }
-  }
+      this.particleService.getParticles().subscribe(data => {
+        this.particlesData = data;
+      })
 
-  async loadJsonFile() {
-    this.http.get('/assets/config/particles/main-particles.json').subscribe(
-      data => {
-        this.particlesUrl = data;
-      },
-      error => {
-        console.error("Erro ao carregar o arquivo JSON:", error);
-      }
-    );
+      this.contactService.getContacts().subscribe(data => {
+        this.contactData = data;
+      })
+    }
   }
 
   async particlesInit(engine: any): Promise<void> {

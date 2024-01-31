@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProjectService } from '../services/project.service';
 
 @Component({
   selector: 'app-projects',
@@ -6,23 +7,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './projects.component.css'
 })
 export class ProjectsComponent implements OnInit {
-  projects = [
-    {
-      title: 'Projeto 1',
-      description: 'Descrição breve do Projeto 1.',
-      imageUrl: 'assets/project1.jpg',
-      link: 'http://link-para-projeto1.com'
-    },
-    {
-      title: 'Projeto 2',
-      description: 'Descrição breve do Projeto 2.',
-      imageUrl: 'assets/project2.jpg',
-      link: 'http://link-para-projeto2.com'
-    }
-  ];
+  projects?: any[];
 
-  constructor() { }
+  constructor(private projectService: ProjectService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.projectService.getProjects().subscribe(data => {
+      this.projects = data;
+    });
+  }
+
+  selectProject(project: any) {
+    console.log('Projeto selecionado:', project);
+
+    // Para navegar para outra rota:
+    // this.router.navigate(['/project-details', project.id]);
+
+    // Ou para abrir um modal/diálogo:
+    // this.dialogService.open(ProjectDetailsComponent, { data: project });
   }
 }

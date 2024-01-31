@@ -13,6 +13,10 @@ import { FooterComponent } from './footer/footer.component';
 
 import { NgxParticlesModule } from "@tsparticles/angular";
 
+import { TimelineModule } from 'primeng/timeline';
+import { ButtonModule } from 'primeng/button';
+import { CardModule } from 'primeng/card';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +31,10 @@ import { NgxParticlesModule } from "@tsparticles/angular";
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    NgxParticlesModule
+    NgxParticlesModule,
+    TimelineModule,
+    ButtonModule,
+    CardModule
   ],
   providers: [
     provideClientHydration()

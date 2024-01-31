@@ -1,14 +1,23 @@
 <div class="timeline-container">
     <h2>Minha Timeline</h2>
     <div class="timeline-area">
-        <div class="timeline">
-            <div class="timeline-item" *ngFor="let item of timelineItems">
-                <div class="timeline-date">{{ item.date }}</div>
-                <div class="timeline-content">
-                    <h3>{{ item.title }}</h3>
-                    <p>{{ item.description }}</p>
-                </div>
-            </div>
+        <div class="card">
+            <p-timeline [value]="events" align="alternate" styleClass="customized-timeline">
+                <ng-template pTemplate="marker" let-event>
+                    <span
+                        class="flex z-1 w-2rem h-2rem align-items-center justify-content-center text-white border-circle shadow-2"
+                        [style.backgroundColor]="event.color">
+                        <i [ngClass]="event.icon"></i>
+                    </span>
+                </ng-template>
+                <ng-template pTemplate="content" let-event>
+                    <p-card [header]="event.title" [subheader]="event.startDate">
+                        <img *ngIf="event.image" [src]="'assets/demo/images/product/' + event.image" [alt]="event.name"
+                            width="200" class="shadow-2" />
+                        <p class="line-height-3 my-3">{{ event.description }}</p>
+                    </p-card>
+                </ng-template>
+            </p-timeline>
         </div>
     </div>
 </div>

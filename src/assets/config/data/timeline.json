@@ -1,0 +1,58 @@
+[
+    {
+        "title": "Engenharia de Computação",
+        "description": "UNIVESP",
+        "startDate": "08/2022",
+        "endDate": "07/2027",
+        "icon": "pi pi-shopping-cart",
+        "color": "#673AB7"
+    },
+    {
+        "title": "Zilor",
+        "description": "Analista Sistemas de Informações Jr.",
+        "startDate": "04/2023",
+        "endDate": "",
+        "icon": "pi pi-arrow-circle-up",
+        "color": "#673AB7"
+    },
+    {
+        "title": "1000 DEVs",
+        "description": "Java",
+        "startDate": "08/2022",
+        "endDate": "12/2022",
+        "icon": "pi pi-arrow-circle-up",
+        "color": "#673AB7"
+    },
+    {
+        "title": "Zilor",
+        "description": "Assistente de TI",
+        "startDate": "06/2021",
+        "endDate": "04/2023",
+        "icon": "pi pi-arrow-circle-up",
+        "color": "#673AB7"
+    },
+    {
+        "title": "Zilor",
+        "description": "Estagiário",
+        "startDate": "06/2021",
+        "endDate": "04/2023",
+        "icon": "pi pi-arrow-circle-up",
+        "color": "#673AB7"
+    },
+    {
+        "title": "Gestão de Tecnologia da Informação",
+        "description": "Factec JAHU",
+        "startDate": "02/2019",
+        "endDate": "12/2021",
+        "icon": "pi pi-arrow-circle-up",
+        "color": "#673AB7"
+    },
+    {
+        "title": "Técnico em Informática",
+        "description": "Etec JAHU",
+        "startDate": "02/2017",
+        "endDate": "06/2018",
+        "icon": "pi pi-arrow-circle-up",
+        "color": "#673AB7"
+    }
+]
