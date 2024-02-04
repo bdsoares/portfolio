@@ -1,10 +1,17 @@
-<div class="footer-container">
-    <div>
-        <a href="https://linkedin.com/in/bdsoares" target="_blank">LinkedIn</a> |
-        <a href="https://github.com/bdsoares" target="_blank">GitHub</a> |
-        <a href="mailto:bdsoares@protonmail.com">Email</a>
+<footer class="footer-container">
+    <div *ngIf="contactData?.length > 0" class="footer-links">
+        <h2>Contatos</h2>
+        <ng-container *ngFor="let contact of contactData">
+            <div class="contact-item">
+                <p class="contact-name">{{ contact.name }}:</p>
+                <a href="{{ contact.data }}" [attr.target]="contact.new_tab ? '_blank' : null" class="contact-data">
+                    {{ removeMailtoPrefix(contact.data) }}
+                </a>
+            </div>
+        </ng-container>
     </div>
-    <div>
-        <p>&copy; {{ currentYear }} Bruno Daniel Soares dos Santos</p>
+    <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2024 Bruno Daniel Soares dos Santos</p>
+        <a href="https://github.com/bdsoares/portfolio" class="footer-source" target="_blank">Código-fonte</a>
     </div>
-</div>
+</footer>

@@ -1,58 +1,58 @@
 [
     {
         "title": "Engenharia de Computação",
-        "description": "UNIVESP",
+        "description": "Cursando Engenharia de Computação na UNIVESP, com foco em desenvolvimento de software, sistemas embarcados e inteligência artificial. Previsão de conclusão em 2027.",
         "startDate": "08/2022",
         "endDate": "07/2027",
-        "icon": "pi pi-shopping-cart",
-        "color": "#673AB7"
+        "icon": "pi pi-desktop",
+        "color": "#009688"
     },
     {
         "title": "Zilor",
-        "description": "Analista Sistemas de Informações Jr.",
+        "description": "Atuando como Analista de Sistemas de Informações Jr., responsável pela implementação de soluções tecnológicas para otimizar processos internos e análise de dados para suporte à decisão.",
         "startDate": "04/2023",
         "endDate": "",
-        "icon": "pi pi-arrow-circle-up",
-        "color": "#673AB7"
+        "icon": "pi pi-spin pi-cog",
+        "color": "#4CAF50"
     },
     {
         "title": "1000 DEVs",
-        "description": "Java",
+        "description": "Participação no programa de formação 1000 DEVs para Java, onde adquiri conhecimentos em programação Java, práticas de desenvolvimento de software e trabalho em equipe.",
         "startDate": "08/2022",
         "endDate": "12/2022",
-        "icon": "pi pi-arrow-circle-up",
-        "color": "#673AB7"
+        "icon": "pi pi-code",
+        "color": "#3F51B5"
     },
     {
         "title": "Zilor",
-        "description": "Assistente de TI",
+        "description": "Como Assistente de TI, fui responsável pelo suporte técnico e participação em projetos de melhoria contínua dos sistemas internos.",
         "startDate": "06/2021",
         "endDate": "04/2023",
-        "icon": "pi pi-arrow-circle-up",
-        "color": "#673AB7"
+        "icon": "pi pi-chart-line",
+        "color": "#FFC107"
     },
     {
         "title": "Zilor",
-        "description": "Estagiário",
-        "startDate": "06/2021",
-        "endDate": "04/2023",
-        "icon": "pi pi-arrow-circle-up",
-        "color": "#673AB7"
+        "description": "Iniciei minha carreira na Zilor como Estagiário, onde tive a oportunidade de aprender sobre a infraestrutura de TI, suporte ao usuário e desenvolvimento de pequenas soluções.",
+        "startDate": "06/2019",
+        "endDate": "04/2021",
+        "icon": "pi pi-book",
+        "color": "#9C27B0"
     },
     {
         "title": "Gestão de Tecnologia da Informação",
-        "description": "Factec JAHU",
+        "description": "Graduado em Gestão de Tecnologia da Informação pela Factec JAHU, adquirindo sólidos conhecimentos em gestão de projetos, segurança da informação e governança de TI.",
         "startDate": "02/2019",
         "endDate": "12/2021",
-        "icon": "pi pi-arrow-circle-up",
-        "color": "#673AB7"
+        "icon": "pi pi-briefcase",
+        "color": "#FF9800"
     },
     {
         "title": "Técnico em Informática",
-        "description": "Etec JAHU",
+        "description": "Formação Técnica em Informática pela Etec JAHU, com ênfase em desenvolvimento de software, redes de computadores e manutenção de sistemas.",
         "startDate": "02/2017",
         "endDate": "06/2018",
-        "icon": "pi pi-arrow-circle-up",
-        "color": "#673AB7"
+        "icon": "pi pi-key",
+        "color": "#00BCD4"
     }
 ]
