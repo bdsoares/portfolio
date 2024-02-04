@@ -9,6 +9,7 @@ export class ContactService {
     constructor(private http: HttpClient) { }
 
     getContacts(): Observable<any> {
-        return this.http.get('/assets/config/data/contact.json');
+        const baseUrl = window.location.origin;
+        return this.http.get(`${baseUrl}/assets/config/data/contact.json`);
     }
 }

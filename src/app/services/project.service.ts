@@ -9,6 +9,7 @@ export class ProjectService {
     constructor(private http: HttpClient) { }
 
     getProjects(): Observable<any> {
-        return this.http.get('/assets/config/data/projects.json');
+        const baseUrl = window.location.origin;
+        return this.http.get(`${baseUrl}/assets/config/data/projects.json`);
     }
 }

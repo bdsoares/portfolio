@@ -9,6 +9,7 @@ export class ParticlesService {
     constructor(private http: HttpClient) { }
 
     getParticles(): Observable<any> {
-        return this.http.get('/assets/config/particles/main-particles.json');
+        const baseUrl = window.location.origin;
+        return this.http.get(`${baseUrl}/assets/config/particles/main-particles.json`);
     }
 }

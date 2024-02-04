@@ -9,6 +9,7 @@ export class TimelineService {
     constructor(private http: HttpClient) { }
 
     getTimeline(): Observable<any> {
-        return this.http.get('/assets/config/data/timeline.json');
+        const baseUrl = window.location.origin;
+        return this.http.get(`${baseUrl}/assets/config/data/timeline.json`);
     }
 }
