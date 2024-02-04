@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TimelineService } from '../services/timeline.service';
 
 
@@ -14,8 +14,7 @@ interface EventItem {
 @Component({
   selector: 'app-timeline',
   templateUrl: './timeline.component.html',
-  styleUrl: './timeline.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  styleUrl: './timeline.component.scss'
 })
 export class TimelineComponent implements OnInit {
   events: EventItem[] = [];
@@ -24,7 +23,7 @@ export class TimelineComponent implements OnInit {
 
   ngOnInit(): void {
     this.timelineService.getTimeline().subscribe(data => {
-      this.events = [...data];
+      this.events = data;
     });
   }
 }

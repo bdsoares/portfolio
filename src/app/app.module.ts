@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -37,7 +37,6 @@ import { CardModule } from 'primeng/card';
     CardModule
   ],
   providers: [
-    provideClientHydration()
   ],
   bootstrap: [AppComponent]
 })
