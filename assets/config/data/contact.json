@@ -1,0 +1,20 @@
+[
+    {
+        "name": "GitHub",
+        "data": "https://github.com/bdsoares",
+        "icon": "pi pi-github",
+        "new_tab": true
+    },
+    {
+        "name": "LinkedIn",
+        "data": "https://linkedin.com/in/bdsoares",
+        "icon": "pi pi-linkedin",
+        "new_tab": true
+    },
+    {
+        "name": "Email",
+        "data": "mailto:bdsoares@protonmail.com",
+        "icon": "pi pi-envelope",
+        "new_tab": false
+    }
+]
