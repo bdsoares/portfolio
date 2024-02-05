@@ -1,8 +1,8 @@
-<div class="projects-container">
+<section class="projects-container">
     <h2>Meus Projetos</h2>
     <div class="projects-area">
         <div class="project-cards">
-            <div *ngFor="let project of projects" class="card">
+            <article *ngFor="let project of projects" class="card">
                 <div class="card-header" [ngStyle]="{'background-color': project.color}">
                     <img src="{{ project.icon }}" alt="{{ project.nome }}" class="card-icon">
                 </div>
@@ -11,10 +11,10 @@
                     <p class="card-text">{{ project.descricao }}</p>
                     <a href="{{ project.link }}" class="card-button">SAIBA MAIS</a>
                 </div>
-            </div>
+            </article>
             <div *ngIf="projects?.length === 0" class="p-col-12 no-projects-message">
                 <p>Nenhum projeto encontrado. Projetos serão adicionados em breve!</p>
             </div>
         </div>
     </div>
-</div>
+</section>

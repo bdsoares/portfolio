@@ -1,0 +1,12 @@
+<nav class="navigation" [ngClass]="{'active': menuActive}">
+    <div class="left-spacer">
+        <button class="hamburger" (click)="toggleMenu()">☰</button>
+        <a href="">Bruno Daniel</a>
+    </div>
+
+    <ul>
+        <li *ngFor="let item of items">
+            <a href="javascript:void(0)" (click)="item.command()">{{item.label}}</a>
+        </li>
+    </ul>
+</nav>
