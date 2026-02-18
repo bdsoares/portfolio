@@ -1,0 +1,132 @@
+{
+  "nav": {
+    "about": {
+      "pt": "Sobre",
+      "en": "About"
+    },
+    "projects": {
+      "pt": "Projetos",
+      "en": "Projects"
+    },
+    "timeline": {
+      "pt": "Trajetória",
+      "en": "Timeline"
+    },
+    "languageAriaLabel": {
+      "pt": "Selecionar idioma",
+      "en": "Select language"
+    },
+    "themeAriaLabel": {
+      "dark": {
+        "pt": "Ativar modo claro",
+        "en": "Enable light mode"
+      },
+      "light": {
+        "pt": "Ativar modo escuro",
+        "en": "Enable dark mode"
+      }
+    }
+  },
+  "hero": {
+    "socialAriaLabel": {
+      "pt": "Links de contato e redes sociais",
+      "en": "Contact and social links"
+    },
+    "cta": {
+      "pt": "Explorar projetos",
+      "en": "Explore projects"
+    }
+  },
+  "about": {
+    "eyebrow": {
+      "pt": "Sobre mim",
+      "en": "About me"
+    },
+    "heading": {
+      "pt": "Analista de Sistemas e Desenvolvedor com foco em soluções web, integrações e dados.",
+      "en": "Systems Analyst and Developer focused on web solutions, integrations, and data."
+    },
+    "focusTitle": {
+      "pt": "Foco atual",
+      "en": "Current focus"
+    }
+  },
+  "projects": {
+    "eyebrow": {
+      "pt": "Portfólio",
+      "en": "Portfolio"
+    },
+    "heading": {
+      "pt": "Projetos com foco em arquitetura de software, experiência do usuário e eficiência de processos.",
+      "en": "Projects focused on software architecture, user experience, and process efficiency."
+    },
+    "filterByTechnology": {
+      "pt": "Filtrar por tecnologia",
+      "en": "Filter by technology"
+    },
+    "allTechnologies": {
+      "pt": "Todas",
+      "en": "All"
+    },
+    "liveProject": {
+      "pt": "Ver projeto",
+      "en": "View project"
+    },
+    "repository": {
+      "pt": "Repositório",
+      "en": "Repository"
+    },
+    "learnMore": {
+      "pt": "Saiba mais",
+      "en": "Learn more"
+    },
+    "privateTag": {
+      "pt": "Projeto interno",
+      "en": "Internal project"
+    },
+    "modalHeading": {
+      "pt": "Detalhes do projeto",
+      "en": "Project details"
+    },
+    "closeModal": {
+      "pt": "Fechar",
+      "en": "Close"
+    },
+    "noResults": {
+      "pt": "Nenhum projeto encontrado para esta tecnologia.",
+      "en": "No projects found for this technology."
+    }
+  },
+  "timeline": {
+    "eyebrow": {
+      "pt": "Trajetória",
+      "en": "Timeline"
+    },
+    "heading": {
+      "pt": "Evolução em análise de sistemas, desenvolvimento e entrega de soluções.",
+      "en": "Progression in systems analysis, development, and solution delivery."
+    }
+  },
+  "footer": {
+    "quickLinksTitle": {
+      "pt": "Navegação",
+      "en": "Navigation"
+    },
+    "contactTitle": {
+      "pt": "Contato",
+      "en": "Contact"
+    },
+    "backToTop": {
+      "pt": "Voltar ao topo",
+      "en": "Back to top"
+    },
+    "rights": {
+      "pt": "Todos os direitos reservados.",
+      "en": "All rights reserved."
+    },
+    "builtWith": {
+      "pt": "Desenvolvido com Angular e foco em experiência digital.",
+      "en": "Built with Angular and focus on digital experience."
+    }
+  }
+}

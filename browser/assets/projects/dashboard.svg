@@ -1,0 +1,51 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="76" y1="36" x2="1100" y2="726" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A2B57"/>
+      <stop offset="1" stop-color="#0E162E"/>
+    </linearGradient>
+    <linearGradient id="graph" x1="420" y1="175" x2="904" y2="490" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6F8DFF"/>
+      <stop offset="1" stop-color="#5DE4C7"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="32" y="32" width="1136" height="696" rx="42" fill="url(#bg)"/>
+  <rect x="96" y="96" width="1008" height="568" rx="30" fill="#0C1327" stroke="#2D427B" stroke-width="4"/>
+
+  <rect x="146" y="144" width="220" height="124" rx="18" fill="#101A33"/>
+  <rect x="170" y="174" width="84" height="64" rx="14" fill="#2B437D"/>
+  <rect x="268" y="174" width="74" height="20" rx="10" fill="#5DE4C7"/>
+  <rect x="268" y="210" width="64" height="16" rx="8" fill="#39569B"/>
+
+  <rect x="390" y="144" width="470" height="300" rx="18" fill="#111E3A"/>
+  <path d="M430 378L500 298L568 322L642 242L708 286L820 196" stroke="url(#graph)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="500" cy="298" r="10" fill="#88F5E1"/>
+  <circle cx="568" cy="322" r="10" fill="#88F5E1"/>
+  <circle cx="642" cy="242" r="10" fill="#88F5E1"/>
+  <circle cx="708" cy="286" r="10" fill="#88F5E1"/>
+  <circle cx="820" cy="196" r="10" fill="#88F5E1"/>
+
+  <rect x="884" y="144" width="170" height="300" rx="18" fill="#101A33"/>
+  <rect x="920" y="192" width="98" height="14" rx="7" fill="#5DE4C7"/>
+  <rect x="920" y="224" width="126" height="14" rx="7" fill="#2E4683"/>
+  <rect x="920" y="256" width="94" height="14" rx="7" fill="#2E4683"/>
+  <rect x="920" y="288" width="120" height="14" rx="7" fill="#2E4683"/>
+  <rect x="920" y="320" width="108" height="14" rx="7" fill="#2E4683"/>
+  <rect x="920" y="352" width="86" height="14" rx="7" fill="#2E4683"/>
+
+  <rect x="146" y="300" width="220" height="144" rx="18" fill="#101A33"/>
+  <path d="M176 406V338" stroke="#5DE4C7" stroke-width="12" stroke-linecap="round"/>
+  <path d="M214 406V322" stroke="#6F8DFF" stroke-width="12" stroke-linecap="round"/>
+  <path d="M252 406V350" stroke="#5DE4C7" stroke-width="12" stroke-linecap="round"/>
+  <path d="M290 406V308" stroke="#6F8DFF" stroke-width="12" stroke-linecap="round"/>
+  <path d="M328 406V332" stroke="#5DE4C7" stroke-width="12" stroke-linecap="round"/>
+
+  <rect x="146" y="470" width="908" height="142" rx="20" fill="#101A33"/>
+  <rect x="182" y="512" width="174" height="54" rx="14" fill="#243C73"/>
+  <rect x="374" y="512" width="174" height="54" rx="14" fill="#243C73"/>
+  <rect x="566" y="512" width="174" height="54" rx="14" fill="#243C73"/>
+  <rect x="758" y="512" width="174" height="54" rx="14" fill="#243C73"/>
+
+  <text x="430" y="214" fill="#D8E3FF" font-family="Arial, sans-serif" font-size="38" font-weight="700">Operations Dashboard</text>
+</svg>

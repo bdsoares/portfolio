@@ -1,0 +1,318 @@
+{
+  "profile": {
+    "name": "Bruno Daniel",
+    "role": {
+      "pt": "Analista de Sistemas e Desenvolvedor",
+      "en": "Systems Analyst and Developer"
+    },
+    "location": {
+      "pt": "Bauru, São Paulo, Brasil",
+      "en": "Bauru, São Paulo, Brazil"
+    },
+    "tagline": {
+      "pt": "Transformo requisitos de negócio em soluções de software escaláveis, seguras e orientadas por dados.",
+      "en": "I turn business requirements into scalable, secure, and data-driven software solutions."
+    },
+    "summary": [
+      {
+        "pt": "Atuo na Zilor como Analista de Sistemas, criando e evoluindo aplicações com Angular, Node.js, .NET C#, Python e SQL Server. Participo desde o levantamento de requisitos até a entrega em produção.",
+        "en": "At Zilor, I work as a Systems Analyst, building and evolving applications with Angular, Node.js, .NET C#, Python, and SQL Server. I contribute from requirements gathering to production delivery."
+      },
+      {
+        "pt": "Tenho experiência em integrações entre sistemas, APIs, automações com Node-RED e construção de dashboards para apoio à decisão. Minha abordagem combina visão de produto, qualidade de código e melhoria contínua.",
+        "en": "I have hands-on experience with system integrations, APIs, Node-RED automations, and dashboards for decision support. My approach combines product mindset, code quality, and continuous improvement."
+      }
+    ],
+    "focusAreas": [
+      {
+        "pt": "Desenvolvimento de aplicações web com Angular e TypeScript",
+        "en": "Web application development with Angular and TypeScript"
+      },
+      {
+        "pt": "Integração de sistemas e APIs para processos de negócio",
+        "en": "System and API integration for business processes"
+      },
+      {
+        "pt": "Modelagem e análise de dados com SQL Server",
+        "en": "Data modeling and analysis with SQL Server"
+      },
+      {
+        "pt": "Automações e dashboards para tomada de decisão",
+        "en": "Automations and dashboards for decision-making"
+      }
+    ]
+  },
+  "socialLinks": [
+    {
+      "label": {
+        "pt": "LinkedIn",
+        "en": "LinkedIn"
+      },
+      "href": "https://www.linkedin.com/in/bdsoares/",
+      "icon": "linkedin",
+      "ariaLabel": {
+        "pt": "Abrir perfil no LinkedIn",
+        "en": "Open LinkedIn profile"
+      }
+    },
+    {
+      "label": {
+        "pt": "GitHub",
+        "en": "GitHub"
+      },
+      "href": "https://github.com/bdsoares",
+      "icon": "github",
+      "ariaLabel": {
+        "pt": "Abrir perfil no GitHub",
+        "en": "Open GitHub profile"
+      }
+    },
+    {
+      "label": {
+        "pt": "E-mail",
+        "en": "Email"
+      },
+      "href": "mailto:contato@brunodaniel.com",
+      "icon": "email",
+      "ariaLabel": {
+        "pt": "Enviar e-mail para Bruno Daniel",
+        "en": "Send email to Bruno Daniel"
+      }
+    }
+  ],
+  "projects": [
+    {
+      "kind": "private",
+      "title": {
+        "pt": "COI - Centro de Operações Industriais",
+        "en": "COI - Industrial Operations Center"
+      },
+      "description": {
+        "pt": "Atuação no COI com desenvolvimento de integrações entre bases locais e temporais, portal IoT em nuvem e dashboards para operação em tempo real.",
+        "en": "Work in the COI building integrations between local and time-series databases, cloud IoT portal, and real-time operational dashboards."
+      },
+      "technologies": [
+        "Node-RED",
+        "MSSQL Server",
+        "Proficy Historian",
+        "MQTT",
+        "Node.js",
+        "APIs"
+      ],
+      "imageUrl": "assets/projects/dashboard.svg",
+      "privateDetails": {
+        "pt": "Projeto interno voltado ao Centro de Operações Industriais, com integração de dados de MSSQL Server e bases temporais como Proficy Historian, além de outras fontes operacionais. Os fluxos em Node-RED conectam o ambiente local ao portal IoT na nuvem via broker MQTT, habilitando monitoramento contínuo e visão consolidada do processo industrial. Também participei da construção de dashboards para acompanhamento em tempo real, apoio na correção ágil de desvios operacionais e tomada de decisão orientada por dados.",
+        "en": "Internal project focused on the Industrial Operations Center, integrating data from MSSQL Server and time-series sources such as Proficy Historian, plus other operational systems. Node-RED flows connect on-premise environments to a cloud IoT portal through an MQTT broker, enabling continuous monitoring and consolidated process visibility. I also supported the development of real-time dashboards to accelerate operational issue handling and data-driven decision making."
+      }
+    },
+    {
+      "kind": "private",
+      "title": {
+        "pt": "Chatbot WhatsApp para Indicadores em Tempo Real",
+        "en": "WhatsApp Chatbot for Real-Time Indicators"
+      },
+      "description": {
+        "pt": "Solução com BLiP e APIs próprias para consultas rápidas de indicadores, geração de imagens com tabelas e gráficos e alertas automáticos de paradas de equipamentos.",
+        "en": "Solution using BLiP and custom APIs for fast KPI queries, image generation with tables and charts, and automated equipment downtime alerts."
+      },
+      "technologies": [
+        "BLiP",
+        "WhatsApp",
+        "Node.js",
+        "APIs",
+        "MSSQL Server",
+        "Charts"
+      ],
+      "imageUrl": "assets/projects/helpdesk.svg",
+      "privateDetails": {
+        "pt": "Projeto corporativo de chatbot no WhatsApp utilizando a plataforma BLiP. Desenvolvi APIs responsáveis por tratar, consolidar e consultar dados de indicadores operacionais em tempo real para gestores. Além das respostas textuais, a solução gera imagens com tabelas e gráficos sob demanda para acelerar a leitura dos dados no contexto mobile. O fluxo também contempla alertas de paradas de equipamentos, aumentando a velocidade de reação das áreas operacionais.",
+        "en": "Corporate WhatsApp chatbot project built on BLiP. I developed APIs to process, consolidate, and query real-time operational indicators for managers. Beyond text responses, the solution generates on-demand images with tables and charts to speed up data interpretation on mobile. The workflow also includes equipment downtime alerts, improving response time for operations teams."
+      }
+    }
+  ],
+  "timeline": [
+    {
+      "period": {
+        "pt": "2017 - 2018",
+        "en": "2017 - 2018"
+      },
+      "title": {
+        "pt": "Técnico em Informática - Etec Joaquim Ferreira do Amaral",
+        "en": "Technical Degree in Informatics - Etec Joaquim Ferreira do Amaral"
+      },
+      "description": {
+        "pt": "Base técnica em sistemas, programação e infraestrutura, consolidando o início da trilha profissional em tecnologia.",
+        "en": "Built a technical foundation in systems, programming, and infrastructure, starting the professional journey in technology."
+      },
+      "skills": [
+        {
+          "pt": "Lógica",
+          "en": "Logic"
+        },
+        {
+          "pt": "Infraestrutura",
+          "en": "Infrastructure"
+        },
+        {
+          "pt": "Suporte",
+          "en": "Support"
+        }
+      ]
+    },
+    {
+      "period": {
+        "pt": "2019 - 2021",
+        "en": "2019 - 2021"
+      },
+      "title": {
+        "pt": "Gestão da Tecnologia da Informação - Fatec Jahu",
+        "en": "Information Technology Management - Fatec Jahu"
+      },
+      "description": {
+        "pt": "Formação superior focada em gestão de TI, processos, banco de dados e desenvolvimento de soluções para negócio.",
+        "en": "Higher education focused on IT management, processes, databases, and business-oriented solution development."
+      },
+      "skills": [
+        {
+          "pt": "Gestão de TI",
+          "en": "IT Management"
+        },
+        {
+          "pt": "Banco de dados",
+          "en": "Databases"
+        },
+        {
+          "pt": "Processos",
+          "en": "Processes"
+        }
+      ]
+    },
+    {
+      "period": {
+        "pt": "jul/2019 - mai/2021",
+        "en": "Jul 2019 - May 2021"
+      },
+      "title": {
+        "pt": "Estagiário de TI - Zilor",
+        "en": "IT Intern - Zilor"
+      },
+      "description": {
+        "pt": "Início da atuação profissional com suporte a sistemas, manutenção e contato direto com usuários para resolução de problemas.",
+        "en": "First professional experience providing system support, maintenance, and direct user assistance for issue resolution."
+      },
+      "skills": [
+        {
+          "pt": "Suporte técnico",
+          "en": "Technical support"
+        },
+        {
+          "pt": "Atendimento",
+          "en": "Service desk"
+        },
+        {
+          "pt": "Operação",
+          "en": "Operations"
+        }
+      ]
+    },
+    {
+      "period": {
+        "pt": "jun/2021 - abr/2023",
+        "en": "Jun 2021 - Apr 2023"
+      },
+      "title": {
+        "pt": "Assistente de TI - Zilor",
+        "en": "IT Assistant - Zilor"
+      },
+      "description": {
+        "pt": "Evolução para entregas com mais autonomia, participando da melhoria de sistemas, automações e padronização de processos.",
+        "en": "Progressed to more autonomous deliveries, contributing to system improvements, automations, and process standardization."
+      },
+      "skills": [
+        {
+          "pt": "Automação",
+          "en": "Automation"
+        },
+        {
+          "pt": "SQL",
+          "en": "SQL"
+        },
+        {
+          "pt": "Documentação",
+          "en": "Documentation"
+        }
+      ]
+    },
+    {
+      "period": {
+        "pt": "ago/2022 - dez/2022",
+        "en": "Aug 2022 - Dec 2022"
+      },
+      "title": {
+        "pt": "Programa 1000 DEVs",
+        "en": "1000 DEVs Program"
+      },
+      "description": {
+        "pt": "Aprimoramento em desenvolvimento de software e fundamentos de programação para acelerar entregas de produtos digitais.",
+        "en": "Advanced software development and programming fundamentals to accelerate digital product delivery."
+      },
+      "skills": [
+        {
+          "pt": "Java",
+          "en": "Java"
+        },
+        {
+          "pt": "APIs",
+          "en": "APIs"
+        },
+        {
+          "pt": "Boas práticas",
+          "en": "Best practices"
+        }
+      ]
+    },
+    {
+      "period": {
+        "pt": "abr/2023 - atual",
+        "en": "Apr 2023 - Present"
+      },
+      "title": {
+        "pt": "Analista de Sistemas Jr - Zilor",
+        "en": "Junior Systems Analyst - Zilor"
+      },
+      "description": {
+        "pt": "Atuação em análise, desenvolvimento e sustentação de soluções com SQL Server, .NET C#, Node.js, Angular e Python, incluindo integrações e dashboards para apoio ao negócio.",
+        "en": "Working on analysis, development, and support of solutions with SQL Server, .NET C#, Node.js, Angular, and Python, including integrations and dashboards to support business decisions."
+      },
+      "skills": [
+        {
+          "pt": "MSSQL Server",
+          "en": "MSSQL Server"
+        },
+        {
+          "pt": "Node-RED",
+          "en": "Node-RED"
+        },
+        {
+          "pt": "Angular",
+          "en": "Angular"
+        },
+        {
+          "pt": "Integrações",
+          "en": "Integrations"
+        }
+      ]
+    }
+  ],
+  "footerMeta": {
+    "sourceCodeUrl": "https://github.com/bdsoares/portfolio",
+    "sourceCodeLabel": {
+      "pt": "Código fonte deste portfólio",
+      "en": "Source code for this portfolio"
+    },
+    "playfulSignature": {
+      "pt": "Construído com {heart} por mim e IA.",
+      "en": "Built with {heart} by me and AI."
+    }
+  }
+}
