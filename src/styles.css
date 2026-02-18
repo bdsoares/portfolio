@@ -121,6 +121,19 @@ img {
   max-width: 100%;
 }
 
+#hero-tech-particles,
+#hero-tech-particles > canvas,
+#hero-tech-particles canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block !important;
+}
+
+#hero-tech-particles {
+  position: absolute !important;
+  inset: 0 !important;
+}
+
 h1,
 h2,
 h3,

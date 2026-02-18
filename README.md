@@ -77,10 +77,13 @@ src/
   index.html
 public/
   assets/
+    icons/
+      favicon.svg
+    images/
+      profile-avatar.svg
     data/
       portfolio-data.json
       portfolio-i18n.json
-  favicon.svg
 ```
 
 ## 5. Fluxo de dados e estado
