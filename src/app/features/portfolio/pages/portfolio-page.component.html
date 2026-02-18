@@ -1,0 +1,85 @@
+<div class="portfolio-page">
+  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+
+  <div class="home-quick-controls" [class.is-visible]="!isNavVisible()">
+    <app-preferences-controls
+      languageSwitchClass="home-quick-controls__lang-switch"
+      themeToggleClass="home-quick-controls__theme-toggle"
+      [languageAriaLabel]="copy.nav.languageAriaLabel"
+      [themeAriaLabels]="copy.nav.themeAriaLabel"
+      (interaction)="closeMobileMenu()"
+    />
+  </div>
+
+  <header class="top-nav" [class.is-visible]="shouldShowTopNav()">
+    <a class="top-nav__brand" href="#home" aria-label="Voltar para o início">BD</a>
+
+    <button
+      class="top-nav__menu-toggle"
+      type="button"
+      aria-controls="top-nav-links"
+      [attr.aria-expanded]="isMobileMenuOpen()"
+      [attr.aria-label]="isMobileMenuOpen() ? 'Fechar menu' : 'Abrir menu'"
+      (click)="toggleMobileMenu()"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav
+      id="top-nav-links"
+      class="top-nav__links"
+      [class.is-open]="isMobileMenuOpen()"
+      aria-label="Navegação principal"
+    >
+      <a href="#sobre" (click)="closeMobileMenu()">{{ ui.text(copy.nav.about) }}</a>
+      <a href="#portfolio" (click)="closeMobileMenu()">{{ ui.text(copy.nav.projects) }}</a>
+      <a href="#timeline" (click)="closeMobileMenu()">{{ ui.text(copy.nav.timeline) }}</a>
+    </nav>
+
+    <div class="top-nav__actions">
+      <app-preferences-controls
+        languageSwitchClass="top-nav__lang-switch"
+        themeToggleClass="top-nav__theme-toggle"
+        [languageAriaLabel]="copy.nav.languageAriaLabel"
+        [themeAriaLabels]="copy.nav.themeAriaLabel"
+        (interaction)="closeMobileMenu()"
+      />
+    </div>
+  </header>
+
+  <section
+    id="home"
+    #homeStageRef
+    class="hero-stage"
+    appParallaxScene
+    [parallaxSoft]="20"
+    [parallaxMedium]="54"
+    [parallaxDeep]="112"
+    [parallaxEasePower]="1.8"
+    aria-label="Home"
+  >
+    <div class="hero-fixed-layer">
+      <app-hero-section [profile]="profile()" [socialLinks]="socialLinks()" [copy]="copy.hero" />
+    </div>
+  </section>
+
+  <main id="main-content" class="content-layer">
+    <app-about-section [profile]="profile()" [copy]="copy.about" />
+    <app-projects-section
+      [projects]="projects()"
+      [copy]="copy.projects"
+      (modalOpenChange)="onProjectModalStateChange($event)"
+    />
+    <app-timeline-section [items]="timeline()" [copy]="copy.timeline" />
+  </main>
+
+  <app-footer-section
+    [profile]="profile()"
+    [socialLinks]="socialLinks()"
+    [footerMeta]="footerMeta()"
+    [copy]="copy.footer"
+    [navCopy]="copy.nav"
+  />
+</div>

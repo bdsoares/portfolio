@@ -1,0 +1,30 @@
+<section id="timeline" class="section timeline">
+  <header class="section__header" appRevealOnScroll [revealDistance]="18">
+    <p class="section__eyebrow">{{ ui.text(copy.eyebrow) }}</p>
+    <h2>{{ ui.text(copy.heading) }}</h2>
+  </header>
+
+  <ol class="timeline__list">
+    @for (item of items; track trackByPeriod($index, item); let index = $index) {
+      <li
+        class="timeline__item"
+        appRevealOnScroll
+        [revealDelay]="index * 120"
+        [revealOrigin]="getRevealOrigin(index)"
+      >
+        <span class="timeline__bullet" aria-hidden="true"></span>
+        <article class="timeline__card">
+          <p class="timeline__period">{{ ui.text(item.period) }}</p>
+          <h3>{{ ui.text(item.title) }}</h3>
+          <p>{{ ui.text(item.description) }}</p>
+
+          <ul class="timeline__skills">
+            @for (skill of item.skills; track skill.pt) {
+              <li>{{ ui.text(skill) }}</li>
+            }
+          </ul>
+        </article>
+      </li>
+    }
+  </ol>
+</section>

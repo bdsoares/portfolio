@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="BD">
+  <defs>
+    <linearGradient id="bd-bg" x1="10%" y1="8%" x2="92%" y2="96%">
+      <stop offset="0%" stop-color="#0b2147" />
+      <stop offset="100%" stop-color="#041024" />
+    </linearGradient>
+    <linearGradient id="bd-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6da8ff" />
+      <stop offset="100%" stop-color="#6fe0d4" />
+    </linearGradient>
+    <radialGradient id="bd-glow" cx="68%" cy="20%" r="75%">
+      <stop offset="0%" stop-color="#7aaeff" stop-opacity="0.62" />
+      <stop offset="100%" stop-color="#7aaeff" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bd-bg)" />
+  <rect x="1.5" y="1.5" width="61" height="61" rx="12.5" fill="none" stroke="#5f88d3" stroke-opacity="0.42" />
+  <circle cx="46" cy="20" r="18" fill="url(#bd-glow)" />
+  <path d="M12 47h40M12 39h40M12 31h40M12 23h40M12 15h40" stroke="#7fa9ef" stroke-opacity="0.1" />
+  <path d="M16 51V13M24 51V13M32 51V13M40 51V13M48 51V13" stroke="#7fa9ef" stroke-opacity="0.1" />
+  <text
+    x="32"
+    y="40"
+    text-anchor="middle"
+    font-size="22"
+    font-weight="800"
+    font-family="Sora, Segoe UI, Arial, sans-serif"
+    letter-spacing="1.4"
+    fill="url(#bd-accent)"
+  >
+    BD
+  </text>
+</svg>

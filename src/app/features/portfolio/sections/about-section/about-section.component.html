@@ -1,0 +1,23 @@
+<section id="sobre" class="section about">
+  <header class="section__header" appRevealOnScroll [revealDistance]="18">
+    <p class="section__eyebrow">{{ ui.text(copy.eyebrow) }}</p>
+    <h2>{{ ui.text(copy.heading) }}</h2>
+  </header>
+
+  <div class="about__content">
+    <article class="about__text" appRevealOnScroll [revealDelay]="120">
+      @for (paragraph of profile.summary; track paragraph.pt) {
+        <p>{{ ui.text(paragraph) }}</p>
+      }
+    </article>
+
+    <aside class="about__panel" appRevealOnScroll [revealDelay]="220" revealOrigin="right">
+      <h3>{{ ui.text(copy.focusTitle) }}</h3>
+      <ul>
+        @for (area of profile.focusAreas; track area.pt) {
+          <li>{{ ui.text(area) }}</li>
+        }
+      </ul>
+    </aside>
+  </div>
+</section>

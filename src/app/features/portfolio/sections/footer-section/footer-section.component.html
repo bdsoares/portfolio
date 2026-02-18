@@ -1,0 +1,49 @@
+<footer class="footer">
+  <div class="section footer__inner">
+    <article class="footer__panel" appRevealOnScroll [revealDistance]="16">
+      <section class="footer__identity">
+        <h2>{{ profile.name }}</h2>
+        <p>{{ ui.text(profile.role) }} | {{ ui.text(profile.location) }}</p>
+        <a class="footer__back-to-top" href="#home">{{ ui.text(copy.backToTop) }}</a>
+      </section>
+
+      <nav class="footer__column" aria-label="Navegação do rodapé">
+        <h3>{{ ui.text(copy.quickLinksTitle) }}</h3>
+        <a href="#sobre">{{ ui.text(navCopy.about) }}</a>
+        <a href="#portfolio">{{ ui.text(navCopy.projects) }}</a>
+        <a href="#timeline">{{ ui.text(navCopy.timeline) }}</a>
+      </nav>
+
+      <section class="footer__column">
+        <h3>{{ ui.text(copy.contactTitle) }}</h3>
+        <a [href]="emailHref">{{ emailHref.replace('mailto:', '') }}</a>
+        @for (link of socialLinks; track trackByLabel($index, link)) {
+          @if (link.icon !== 'email') {
+            <a [href]="link.href" target="_blank" rel="noopener noreferrer">{{ ui.text(link.label) }}</a>
+          }
+        }
+      </section>
+    </article>
+
+    <div class="footer__bottom" appRevealOnScroll [revealDelay]="80" [revealDistance]="12">
+      <p>&copy; {{ currentYear }} {{ profile.name }}. {{ ui.text(copy.rights) }}</p>
+      <p>{{ ui.text(copy.builtWith) }}</p>
+    </div>
+
+    <div class="footer__meta" appRevealOnScroll [revealDelay]="140" [revealDistance]="12">
+      <a
+        class="footer__source-link"
+        [href]="footerMeta.sourceCodeUrl"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {{ ui.text(footerMeta.sourceCodeLabel) }}
+      </a>
+      <p class="footer__playful">
+        {{ playfulSignatureParts.before }}
+        <span class="footer__heart" aria-hidden="true">&#10084;</span>
+        {{ playfulSignatureParts.after }}
+      </p>
+    </div>
+  </div>
+</footer>

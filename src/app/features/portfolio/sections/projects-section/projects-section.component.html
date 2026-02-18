@@ -1,0 +1,126 @@
+<section
+  id="portfolio"
+  class="projects"
+  [class.projects--modal-open]="selectedPrivateProject() !== null"
+  appParallaxScene
+  [parallaxSoft]="14"
+  [parallaxMedium]="34"
+  [parallaxDeep]="64"
+  [parallaxEasePower]="1.55"
+>
+  <div class="projects__backdrop" aria-hidden="true">
+    <span class="projects__halo projects__halo--one"></span>
+    <span class="projects__halo projects__halo--two"></span>
+    <span class="projects__mesh"></span>
+  </div>
+
+  <div class="section projects__content">
+    <header class="section__header" appRevealOnScroll [revealDistance]="18">
+      <p class="section__eyebrow">{{ ui.text(copy.eyebrow) }}</p>
+      <h2>{{ ui.text(copy.heading) }}</h2>
+    </header>
+
+    <div class="projects__filters" appRevealOnScroll [revealDelay]="70" [revealDistance]="22">
+      <p class="projects__filters-label">{{ ui.text(copy.filterByTechnology) }}</p>
+      <div class="projects__chips">
+        @for (filter of technologyFilters; track filter) {
+          <button
+            type="button"
+            class="projects__chip"
+            [class.is-active]="isFilterActive(filter)"
+            (click)="setTechnologyFilter(filter)"
+          >
+            @if (filter === 'all') {
+              {{ ui.text(copy.allTechnologies) }}
+            } @else {
+              {{ filter }}
+            }
+          </button>
+        }
+      </div>
+    </div>
+
+    @if (filteredProjects.length === 0) {
+      <p class="projects__empty-state">{{ ui.text(copy.noResults) }}</p>
+    } @else {
+      <div class="projects__grid">
+        @for (project of filteredProjects; track trackByTitle($index, project); let index = $index) {
+          <article
+            class="project-card"
+            [style.--card-scroll-offset]="cardScrollOffset(index)"
+            appRevealOnScroll
+            [revealDelay]="index * 120"
+            [revealDistance]="30"
+          >
+            <div class="project-card__tilt" appTiltCard [tiltMax]="6.5" [tiltScale]="1.008">
+              <figure class="project-card__media">
+                <img [src]="project.imageUrl" [alt]="'Project image ' + ui.text(project.title)" loading="lazy" />
+              </figure>
+
+              <div class="project-card__body">
+                <h3>{{ ui.text(project.title) }}</h3>
+                <p>{{ ui.text(project.description) }}</p>
+
+                <ul class="project-card__stack">
+                  @for (tech of project.technologies; track tech) {
+                    <li>{{ tech }}</li>
+                  }
+                </ul>
+
+                <div class="project-card__actions">
+                  @if (isPublicProject(project)) {
+                    <a [href]="project.liveUrl" target="_blank" rel="noopener noreferrer">
+                      {{ ui.text(copy.liveProject) }}
+                    </a>
+                    <a [href]="project.repositoryUrl" target="_blank" rel="noopener noreferrer">
+                      {{ ui.text(copy.repository) }}
+                    </a>
+                  } @else if (isPrivateProject(project)) {
+                    <span class="project-card__private-tag">{{ ui.text(copy.privateTag) }}</span>
+                    <button type="button" (click)="openPrivateProjectDetails(project)">
+                      {{ ui.text(copy.learnMore) }}
+                    </button>
+                  }
+                </div>
+              </div>
+            </div>
+          </article>
+        }
+      </div>
+    }
+  </div>
+
+  @if (selectedPrivateProject(); as privateProject) {
+    <div
+      class="projects-modal"
+      role="dialog"
+      aria-modal="true"
+      [attr.aria-label]="ui.text(copy.modalHeading)"
+      (click)="onModalBackdropClick($event)"
+    >
+      <article class="projects-modal__panel">
+        <button
+          type="button"
+          class="projects-modal__close"
+          [attr.aria-label]="ui.text(copy.closeModal)"
+          (click)="closePrivateProjectDetails()"
+        >
+          &times;
+        </button>
+
+        <p class="projects-modal__eyebrow">{{ ui.text(copy.privateTag) }}</p>
+        <h3>{{ ui.text(privateProject.title) }}</h3>
+
+        @if (privateProject.privateDetails) {
+          <p>{{ ui.text(privateProject.privateDetails) }}</p>
+        }
+
+        <ul class="projects-modal__stack">
+          @for (tech of privateProject.technologies; track tech) {
+            <li>{{ tech }}</li>
+          }
+        </ul>
+      </article>
+    </div>
+  }
+</section>
