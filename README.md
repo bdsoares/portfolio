@@ -80,7 +80,7 @@ public/
     icons/
       favicon.svg
     images/
-      profile-avatar.svg
+      profile-avatar.jpg
     data/
       portfolio-data.json
       portfolio-i18n.json

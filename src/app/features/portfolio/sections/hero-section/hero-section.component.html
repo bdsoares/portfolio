@@ -16,7 +16,10 @@
       class="hero__avatar"
       appRevealOnScroll
       [revealDelay]="180"
-      src="assets/images/profile-avatar.svg"
+      [src]="avatarSrc()"
+      loading="eager"
+      fetchpriority="high"
+      (error)="onAvatarLoadError()"
       [alt]="'Profile photo of ' + profile.name"
     />
 

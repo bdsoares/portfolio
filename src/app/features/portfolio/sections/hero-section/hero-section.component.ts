@@ -25,6 +25,8 @@ import { PortfolioCopy, ProfileData, SocialLink } from '../../models/portfolio.m
 export class HeroSectionComponent implements OnDestroy {
   private readonly ngParticlesService = inject(NgParticlesService);
   private particlesInitialized = false;
+  private readonly avatarSrcCandidates = this.buildAvatarSrcCandidates();
+  private avatarSrcIndex = 0;
   private readonly onWindowLoad = (): void => {
     this.shouldRenderParticles.set(true);
     this.initializeParticles();
@@ -234,6 +236,7 @@ export class HeroSectionComponent implements OnDestroy {
 
   protected readonly ui = inject(UiPreferencesService);
   protected readonly particlesId = 'hero-tech-particles';
+  protected readonly avatarSrc = signal(this.avatarSrcCandidates[0] ?? 'assets/images/profile-avatar.jpg');
   protected readonly shouldRenderParticles = signal(this.isDocumentReady());
   protected readonly particlesOptions = computed<ISourceOptions>(() =>
     this.ui.theme() === 'light' ? this.lightParticlesOptions : this.darkParticlesOptions
@@ -251,6 +254,17 @@ export class HeroSectionComponent implements OnDestroy {
 
   protected trackByLabel(_: number, link: SocialLink): string {
     return link.href;
+  }
+
+  protected onAvatarLoadError(): void {
+    const nextIndex = this.avatarSrcIndex + 1;
+
+    if (nextIndex >= this.avatarSrcCandidates.length) {
+      return;
+    }
+
+    this.avatarSrcIndex = nextIndex;
+    this.avatarSrc.set(this.avatarSrcCandidates[nextIndex]);
   }
 
   ngOnDestroy(): void {
@@ -279,5 +293,28 @@ export class HeroSectionComponent implements OnDestroy {
     void this.ngParticlesService.init(async (engine: Engine) => {
       await loadFull(engine);
     });
+  }
+
+  private buildAvatarSrcCandidates(): string[] {
+    const windowRef = this.getWindowRef();
+    const pathSegments = windowRef?.location.pathname.split('/').filter(Boolean) ?? [];
+    const repoPrefix = pathSegments.length > 0 ? `/${pathSegments[0]}` : '';
+
+    const candidates = [
+      repoPrefix ? `${repoPrefix}/assets/images/profile-avatar.jpg` : '',
+      '/assets/images/profile-avatar.jpg',
+      'assets/images/profile-avatar.jpg',
+      repoPrefix ? `${repoPrefix}/assets/profile-avatar.jpg` : '',
+      '/assets/profile-avatar.jpg',
+      'assets/profile-avatar.jpg',
+      repoPrefix ? `${repoPrefix}/assets/images/profile-avatar.svg` : '',
+      '/assets/images/profile-avatar.svg',
+      'assets/images/profile-avatar.svg',
+      repoPrefix ? `${repoPrefix}/assets/profile-avatar.svg` : '',
+      '/assets/profile-avatar.svg',
+      'assets/profile-avatar.svg'
+    ].filter(Boolean);
+
+    return Array.from(new Set(candidates));
   }
 }
